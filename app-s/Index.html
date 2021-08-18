@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Pagina Inicial</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!--<meta http-equiv="refresh" content="2">-->
+</head>
+
+<body>
+  <section class="container">
+    <nav>
+      <ul>
+        <a href="assets/quebra.html">Quebra</a>
+      </ul>
+    </nav>
+    <h2>Estufa</h2>
+    <h3>N°</h3>
+    <select id="selecao">
+
+      <option value="one">Estufa 1</option>
+      <option value="two">Estufa 2</option>
+      <option value="tree">Estufa 3</option>
+      <option value="four">Estufa 4</option>
+      <option value="five">Estufa 5</option>
+      <option value="sex">Estufa 6</option>
+      <option value="serven">Estufa 7</option>
+      <option value="eight">Estufa 8</option>
+      <option value="nine">Estufa 9</option>
+      <option value="ten">Estufa 10</option>
+      <option value="eleven">Estufa 11</option>
+      <option value="twelve">Estufa 12</option>
+
+    </select>
+
+        <form action="/" id="form" method="get">
+
+          <label for="hour">Hora Entrada</label>
+          <input type="time" id="hour" name="hour" step="2" min="06:00" max="24:00" required>
+           
+           <!-- <div id="resultasa"></div> -->
+           <p>
+              Horário Saída:
+                    <span id="result">n/a</span>
+          </p>
+          
+         
+
+          <label for="pesoVerde">Peso Verde</label>
+          <input type="number" id="initial">
+
+          <label for="pesoAcabado">Peso Acabado</label>
+          <input type="number" id="finished">
+
+          <button type="submit">Envia</button>
+
+        </form>
+
+    <h5>% Quebra Cozimento</h5>
+    <div id="resu"></div>
+    
+
+  </section>
+ 
+  <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
