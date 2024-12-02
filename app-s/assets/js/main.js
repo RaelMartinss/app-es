@@ -6,24 +6,24 @@ form.addEventListener('submit', function(e){
      const pesoInicial = e.target.querySelector('#initial');
      const pesoFinal = e.target.querySelector('#finished');
 
+     const estufa = document.getElementById('selecao');
+     valorEstufa = estufa.options[estufa.selectedIndex].value;
+     console.log(valorEstufa);
+
     const pesoI = Number(pesoInicial.value);
     const pesoF = Number(pesoFinal.value);
 
-    if(!pesoI){
-      setResultad('Peso Inválido', false);
+    if(!pesoI || !pesoF || !valorEstufa){
+      setResultad('Preencha todos os campos!', false);
       return;
     }
-   if(!pesoF){
-     setResultad('Peso Inválido', false);
-     return;
-   }
 
     const msg = quebra(pesoI, pesoF);
     
     const res = resultado(pesoI);
     const ress = resultado2(pesoF);
     
-    const str = `Peso1: ${res} <br/>Peso2: ${ress}<br/> Quebra: ${msg.toFixed(2)}`;
+    const str = `Estufa: ${valorEstufa}<br/> Peso Inicial: ${res} <br/>Peso Final: ${ress}<br/> Quebra: ${msg.toFixed(2)}`;
    // setResultado(msg, true);
     setResultad(str, true);
    // setResultad(msg, true);

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'); */
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -10,7 +10,7 @@
 
 }
 h2 {
-  font-family: 'Open sans', Sans-Serif;
+  /* font-family: 'Open sans', Sans-Serif; */
   margin: 15px;
   margin-top: 30px;
 }
@@ -84,15 +84,10 @@ button {
 button:hover {
   background: var(--primary-color-darker);
 }
-div {
-  background: #008b8b;
-  margin: 15px;
-  border-radius: 10px;
-}
 
 label{
   display: block;
-  font: 1rem 'Fira Sans', sans-serif;
+  /* font: 1rem 'Fira Sans', sans-serif; */
 }
 input, label {
   margin: .4rem 0;
@@ -119,5 +114,39 @@ a {
   color: #fff;
   font-size: 25px;
   padding: 10px;
+  text-align: center;
+}
+
+.paragrafo-resultado {
+  margin: 2rem 0;
+  background: #008b8b;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+form input, #selecao {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px; 
+  color: #333; 
+  background-color: #f9f9f9; 
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none; 
+  transition: all 0.3s ease; 
+}
+
+form input {
+  width: 100%;
+}
+
+#selecao:hover, form input:hover {
+  border-color: #777; /
+}
+
+#selecao:focus, form input:focus {
+  border-color: #555; 
+  background-color: #fff;
 }
 
